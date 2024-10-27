@@ -6,38 +6,35 @@
     <title>About Us - Password Manager </title>
     <link rel="stylesheet" href="style1.css">
     <style>
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 20px;
-            }
-            .menu ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            .menu ul li {
-                margin: 5px 0;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            .accordion {
-                font-size: 16px;
-                padding: 12px;
-                cursor: pointer; 
-                background-color: #f1f1f1; 
-                border: none;
-                text-align: left; 
-                outline: none; 
-                transition: 0.4s;
-            }
-            .active, .accordion:hover {
-                background-color: #ccc; /* Change color when active or hovered */
-            }
-            .panel {
-                display: none; /* Hide panel by default */
-                font-size: 14px;
-                padding: 0 12px;
-            }
+        .content {
+            width: 1200px;
+            margin: auto;
+            color: white;
+        }
+        .accordion {
+            background-color: #444;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            margin-top: 10px;
+        }
+
+        .accordion.active, .accordion:hover {
+            background-color: #ff7200;
+        }
+
+        .panel {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #333;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -45,12 +42,15 @@
 
     <div class="main">
         <div class="navbar">
-            <h2 class="logo">PASSWORD MANAGER</h2>
+            <div class="icon">
+                <h2 class="logo">PASSWORD MANAGER</h2>
+            </div>
+
             <div class="menu">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="./services.html">SERVICE</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -93,12 +93,7 @@
             accordion.addEventListener("click", function() {
                 this.classList.toggle("active");
                 const panel = this.nextElementSibling;
-
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
             });
         });
     </script>
