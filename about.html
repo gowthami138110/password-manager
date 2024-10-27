@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Password Manager </title>
     <link rel="stylesheet" href="style1.css">
-    <style>   
+    <style>
         @media (max-width: 768px) {
             .logo {
                 font-size: 20px;
@@ -23,9 +23,20 @@
             .accordion {
                 font-size: 16px;
                 padding: 12px;
+                cursor: pointer; 
+                background-color: #f1f1f1; 
+                border: none;
+                text-align: left; 
+                outline: none; 
+                transition: 0.4s;
+            }
+            .active, .accordion:hover {
+                background-color: #ccc; /* Change color when active or hovered */
             }
             .panel {
+                display: none; /* Hide panel by default */
                 font-size: 14px;
+                padding: 0 12px;
             }
         }
     </style>
@@ -82,7 +93,12 @@
             accordion.addEventListener("click", function() {
                 this.classList.toggle("active");
                 const panel = this.nextElementSibling;
-                panel.style.display = panel.style.display === "block" ? "none" : "block";
+
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
             });
         });
     </script>
