@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us - Lock Safe </title>
+    <title>Join Us - Lock Safe</title>
     <link rel="stylesheet" href="style1.css">
     <style>
         .content {
-            width: 1200px;
+            width: 100%;
+            max-width: 1200px;
             margin: auto;
             color: white;
             padding: 20px;
@@ -46,6 +47,42 @@
 
         .btn-submit:hover {
             background-color: #ff4500;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 15px;
+            }
+
+            .form-group input {
+                padding: 8px;
+            }
+
+            .btn-submit {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            .navbar ul li {
+                margin: 5px 0;
+            }
+
+            .content h1 {
+                font-size: 1.5em;
+            }
+
+            .content p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -95,7 +132,6 @@
         document.getElementById("join-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
 
-            // Here, you would typically handle the form submission to your backend or service
             alert("Thank you for joining us!");
             this.reset(); // Reset the form fields
         });
