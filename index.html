@@ -12,14 +12,14 @@
             background-color: #0a0a23;
             color: white;
         }
-        
+
         .main {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px;
         }
-        
+
         .navbar {
             width: 100%;
             display: flex;
@@ -28,39 +28,39 @@
             padding: 10px 20px;
             background-color: #0a0a23;
         }
-        
+
         .icon h2.logo {
             font-size: 1.5em;
             color: #00c1ff;
         }
-        
+
         .menu ul {
             list-style-type: none;
             display: flex;
             gap: 15px;
         }
-        
+
         .menu ul li a {
             text-decoration: none;
             color: #00c1ff;
             font-weight: bold;
         }
-        
+
         .content {
             text-align: center;
             padding: 20px;
         }
-        
+
         .content h1 {
             font-size: 2.5em;
             line-height: 1.2em;
         }
-        
+
         .content p.par {
             font-size: 1.1em;
             margin-top: 10px;
         }
-        
+
         .cn {
             background-color: #00c1ff;
             color: white;
@@ -81,13 +81,13 @@
             box-shadow: 0 0 10px rgba(0, 193, 255, 0.5);
             text-align: center;
         }
-        
+
         .form h2 {
             font-size: 1.5em;
             margin-bottom: 20px;
             color: #00c1ff;
         }
-        
+
         .form input {
             width: 100%;
             padding: 10px;
@@ -97,7 +97,7 @@
             background-color: #0a0a23;
             color: white;
         }
-        
+
         .form .btnn {
             background-color: #00c1ff;
             color: white;
@@ -108,18 +108,18 @@
             cursor: pointer;
             margin-top: 10px;
         }
-        
+
         .form .link {
             color: white;
             font-size: 0.9em;
             margin-top: 15px;
         }
-        
+
         .form .link a {
             color: #ff6b6b;
             text-decoration: none;
         }
-        
+
         .icons {
             margin-top: 20px;
             display: flex;
@@ -134,10 +134,22 @@
         }
 
         @media (max-width: 768px) {
+            /* Navbar adjustments */
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            /* Content adjustments */
             .content h1 {
                 font-size: 2em;
             }
-            
+
             .content p.par {
                 font-size: 1em;
             }
@@ -145,15 +157,31 @@
             .cn {
                 width: 100%;
             }
-            
-            .navbar .menu ul {
-                flex-direction: column;
-                text-align: center;
-                padding: 10px;
+
+            /* Form adjustments */
+            .form {
+                width: 90%;
+                padding: 15px;
             }
-            
-            .navbar {
-                flex-direction: column;
+
+            .form h2 {
+                font-size: 1.2em;
+            }
+
+            .form input {
+                padding: 8px;
+            }
+
+            .form .btnn {
+                padding: 8px;
+            }
+
+            .form .link {
+                font-size: 0.85em;
+            }
+
+            .icons a {
+                font-size: 1.3em;
             }
         }
     </style>
