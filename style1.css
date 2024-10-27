@@ -7,8 +7,6 @@
     width: 100%;
     background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%,);
     background-image: url('2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
     background-position: center;
     background-size: cover;
     height:109vh;
@@ -27,7 +25,7 @@
 }
 
 .logo{
-    color:skyblue;
+    color:#39ff14;
     font-size: 35px;
     font-family: Arial;
     padding-left: 20px;
@@ -59,7 +57,7 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color:skyblue;
+    color:#39ff14;
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
@@ -78,7 +76,7 @@ ul li a:hover{
     width: 200px;
     height: 40px;
     background: transparent;
-    border: 1px solid skyblue;
+    border: 1px solid #ff7200;
     margin-top: 13px;
     color: #fff;
     border-right: none;
@@ -92,8 +90,8 @@ ul li a:hover{
 .btn{
     width: 100px;
     height: 40px;
-    background: skyblue;
-    border: 2px solid skyblue;
+    background: #ff7200;
+    border: 2px solid #ff7200;
     margin-top: 13px;
     color: #fff;
     font-size: 15px;
@@ -121,15 +119,6 @@ ul li a:hover{
     color: white;
     position: relative;
 }
-.content h1 {
-    text-align: left; /* Aligns the heading to the left */
-    margin-left: 20px; /* Optional: Add margin to the left for some spacing */
-}
-
-.content .par {
-    text-align: left;
-    margin-left: 20px;
-
 
 .content .par{
     padding-left: 10px;
@@ -150,7 +139,7 @@ ul li a:hover{
 .content .cn{
     width: 160px;
     height: 40px;
-    background: skyblue;
+    background: #ff7200;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -172,7 +161,7 @@ ul li a:hover{
 }
 
 .content span{
-    color:  navy blue;
+    color: #ff7200;
     font-size: 65px
 }
 
@@ -192,8 +181,9 @@ ul li a:hover{
     width: 220px;
     font-family: sans-serif;
     text-align: center;
-    color: white;
+    color: #ff7200;
     font-size: 22px;
+    background-color: #fff;
     border-radius: 10px;
     margin: 2px;
     padding: 8px;
@@ -226,7 +216,7 @@ ul li a:hover{
 .btnn{
     width: 240px;
     height: 40px;
-    background: skyblue;
+    background: #ff7200;
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -271,5 +261,5 @@ ul li a:hover{
     transition: 0.3s ease;
 }
 .icons ion-icon:hover{
-    color: skyblue;
-} 
+    color: #ff7200;
+}
