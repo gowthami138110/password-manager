@@ -6,10 +6,55 @@
     <title>About Us - Password Manager </title>
     <link rel="stylesheet" href="style1.css">
     <style>
-        .content {
-            width: 1200px;
-            margin: auto;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
             color: white;
+        }
+        .main {
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            font-size: 22px;
+            color: #ff7200;
+            margin: 0;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .menu ul li {
+            margin: 0 10px;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .menu ul li a:hover {
+            color: #ff7200;
+        }
+        .content {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #ff7200;
         }
         .accordion {
             background-color: #444;
@@ -24,17 +69,39 @@
             transition: 0.4s;
             margin-top: 10px;
         }
-
         .accordion.active, .accordion:hover {
             background-color: #ff7200;
         }
-
         .panel {
-            padding: 0 15px;
+            padding: 15px;
             display: none;
             overflow: hidden;
             background-color: #333;
-            font-size: 20px;
+            font-size: 16px;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 20px;
+            }
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu ul li {
+                margin: 5px 0;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .accordion {
+                font-size: 16px;
+                padding: 12px;
+            }
+            .panel {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -42,15 +109,12 @@
 
     <div class="main">
         <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">PASSWORD MANAGER</h2>
-            </div>
-
+            <h2 class="logo">PASSWORD MANAGER</h2>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="./services.html">SERVICE</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
