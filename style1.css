@@ -127,9 +127,8 @@ ul li a:hover{
 }
 
 .content .par {
-    text-align: left; /* Aligns the paragraph text to the left */
-    margin-left: 20px; /* Optional: Add margin to the left for spacing */
-}
+    text-align: left;
+    margin-left: 20px;
 
 
 .content .par{
@@ -273,4 +272,4 @@ ul li a:hover{
 }
 .icons ion-icon:hover{
     color: skyblue;
-}
+} 
