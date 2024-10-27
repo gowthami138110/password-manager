@@ -3,110 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOCK SAFE</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Lock Safe</title>
     <style>
-
-        @media (max-width: 480px) {
-            .main {
+        body {
+            font-family: Calibri, sans-serif;
+            background-image: url('./654.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            color: white;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+        figure {
+            border: 2px solid black;
+            width: 90%;
+            max-width: 300px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px black;
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        figure:hover {
+            transform: translateY(-10px);
+        }
+        figure img {
+            width: 100%;
+            transition: transform 0.2s ease-in-out;
+        }
+        figure img:hover {
+            transform: scale(1.1);
+        }
+        figure figcaption {
+            padding: 10px 25px;
+            font-size: 20px;
+        }
+        .btnn {
+            background-color: white;
+            color: green;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btnn:hover {
+            background-color: black;
+        }
+        @media (max-width: 768px) {
+            figure {
                 width: 100%;
-                padding: 10px;
-            }
-
-            .navbar .menu ul {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar .menu ul li {
-                margin: 10px 0;
-            }
-
-            .content h1 {
-                font-size: 28px;
-            }
-
-            .content p {
-                font-size: 14px;
-            }
-
-            .form {
-                width: 90%;
-                padding: 15px;
-            }
-
-            .form input,
-            .form .btnn {
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            .icons a {
-                font-size: 20px;
-                margin: 0 5px;
+                max-width: 90%;
             }
         }
     </style>
 </head>
 <body>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">PASSWORD MANAGER</h2>
-            </div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="#index.html">HOME</a></li>
-                    <li><a href="./about.html">ABOUT</a></li>
-                    <li><a href="./services.html">SERVICE</a></li>
-                    <li><a href="./contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-        </div> 
-
-        <div class="content">
-            <h1><span>SECURE</span> <br><span>Password storage</span> <br><span>and generator</span></h1>
-            <p class="par">A password manager securely stores your passwords, enabling strong, unique credentials <br>
-                for each online account while encrypting sensitive information.
-            </p>
-
-            <button class="cn"><a href="./join us.html" style="color: white; text-decoration: none;">JOIN US</a></button>
-
-            <div class="form">
-                <h2>Login Here</h2>
-                <input type="email" id="email" placeholder="Enter Email Here" required>
-                <input type="password" id="password" placeholder="Enter Password Here" required>
-                <button class="btnn" onclick="login()">Login</button>
-
-                <p class="link">Don't have an account<br>
-                <a href="./signup.html">Sign up </a> here</p>
-                <p class="liw">Log in with</p>
-
-                <div class="icons">
-                    <a href="./facebook.html"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="./instagram.html"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="./google.html"><ion-icon name="logo-google"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                </div>
-            </div>
-        </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICE</a></li>
+            <li><a href="login.html">DASHBOARD</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
     </div>
-
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script>
-        function login() {
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
-            if (email && password) {
-                window.location.href = "./login.html";
-            } else {
-                alert("Please enter both email and password.");
-            }
-        }
-    </script>
-
+    <figure>
+        <img src="smartlock.jpg" alt="Smart Lock Installation">
+        <a href="./store_password.html" style="font-weight: 200;"> <button type="submit" class="btnn">Smart Lock Installation</button></a>
+    </figure>
+    <figure>
+        <img src="smarthome.jpg" alt="Home Security Systems">
+        <a href="./store_password.html" style="font-weight: 200;"> <button type="submit" class="btnn">Smart Home</button></a>
+    </figure>
+    <figure>
+        <img src="securityassessment.jpg" alt="Security Assessments">
+        <a href="./store_password.html" style="font-weight: 200;"> <button type="submit" class="btnn">Security Assessments</button></a>
+    </figure>
+    <figure>
+        <img src="8.jpg" alt="Emergency Lockout Services">
+        <a href="./store_password.html" style="font-weight: 200;"> <button type="submit" class="btnn">Emergency Lockout Services</button></a>
+    </figure>
 </body>
 </html>
