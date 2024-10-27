@@ -32,7 +32,38 @@
         .service p {
             margin: 0;
         }
-    
+        @media (max-width: 768px) {
+            .content {
+                width: 90%; 
+                padding: 15px; 
+            }
+
+            .service {
+                padding: 10px; 
+            }
+
+            .service h2 {
+                font-size: 18px; 
+            }
+
+            .service p {
+                font-size: 16px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                font-size: 18px; 
+            }
+
+            .service h2 {
+                font-size: 16px; 
+            }
+
+            .service p {
+                font-size: 14px; 
+            }
+        }
     </style>
 </head>
 <body>
